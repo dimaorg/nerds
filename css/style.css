@@ -22,10 +22,18 @@ table,
 tr,
 th,
 div,
-b {
+b,
+dl,
+dd,
+dt {
     display: block;
     padding: 0;
     margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
 }
 
 a {
@@ -168,8 +176,8 @@ a {
 
 .projects {
     box-sizing: border-box;
-    padding: 0 140px;
-    width: 100%;
+    margin: 0 140px;
+    width: 1160px;
     height: 469px;
     display: flex;
     justify-content: flex-start;
@@ -233,6 +241,144 @@ a {
 
 .projects-item:not(:last-of-type) {
     margin-right: 100px;
+}
+
+.features {
+    width: 1160px;
+    height: 527px;
+    box-sizing: border-box;
+    margin: 0 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+}
+
+.features-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.features-tagline {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+    margin-bottom: 35px;
+}
+
+.features-item p:nth-of-type(1) {
+    color: #283136;
+    line-height: 24px;
+    margin-bottom: 45px;
+}
+
+.features-list-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.features-list li {
+    color: #283136;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.features-list li:not(:last-of-type) {
+    margin-bottom: 35px;
+}
+
+.features-list li::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 2px;
+    background-color: #fb565a;
+    margin-right: 10px;
+}
+
+.features-statistics {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.features-statistics::before {
+    content: "";
+    display: block;
+    width: 360px;
+    height: 208px;
+    background-image: url(../img/nerds-illustration.png);
+    margin-bottom: 40px;
+}
+
+.features-statistics b {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+dl {
+    width: 350px;
+    display: flex;
+    justify-content: flex-start;;
+    align-items: center;
+}
+
+dl div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 25px;
+}
+
+dt {
+    margin-bottom: 25px;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+dd {
+    color: #283136;
+}
+
+.links {
+    width: 1160px;
+    height: 180px;
+    margin: 0 140px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 2px solid #eee;
+}
+
+.links-list {
+    flex-basis: 1160px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links-list li{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.links-list li:not(:last-of-type)::after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 52px;
+    background-color: #eee;
+    margin-left: 45px;
 }
 
 .main-footer {
@@ -358,6 +504,7 @@ iframe {
     background-color: #eee;
     width: 100vw;
     display: block;
+    border: 0;
 }
 
 .write-us {
