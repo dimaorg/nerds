@@ -26,10 +26,15 @@ b,
 dl,
 dd,
 dt,
-button {
+button,
+fieldset {
     display: block;
     padding: 0;
     margin: 0;
+}
+
+fieldset {
+    border: 0;
 }
 
 ul,
@@ -519,6 +524,13 @@ iframe {
     position: absolute;
 }
 
+.catalog-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
 .main-title {
     display: flex;
     justify-content: center;
@@ -532,6 +544,7 @@ iframe {
 
 .catalog {
     width: 760px;
+    margin-right: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -621,6 +634,38 @@ iframe {
 
 .sites-preview img {
     border: 1px solid #e5e5e5;
+}
+
+.catalog-navigation {
+    flex-basis: 100%;
+    height: 170px;
+    margin-top: -33px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.catalog-navigation ul {
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.catalog-navigation a {
+    width: 50px;
+    height: 50px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #eee;
+    border-radius: 3px;
+}
+
+a.next {
+    width: 260px;
 }
 
 .current {

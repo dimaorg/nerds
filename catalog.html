@@ -25,7 +25,25 @@
     </header>
     <main class="catalog-container">
         <h1 class="main-title">Магазин готовых шаблонов</h1>
-        <section class="filters"></section>
+        <section class="filters">
+            <form action="https://echo.htmlacademy.ru" method="post">
+                <fieldset>
+                    <legend>Сетка:</legend>
+                    <label for="grid-1">Адаптивная</label><input type="radio" name="grid" id="grid-1" checked>
+                    <label for="grid-2">Фиксированная</label><input type="radio" name="grid" id="grid-2">
+                    <label for="grid-3">Резиновая</label><input type="radio" name="grid" id="grid-3">
+                </fieldset>
+                <fieldset>
+                    <legend>Особенности:</legend>
+                    <label for="speciality-1">Слайдер</label><input type="checkbox" name="speciality" id="speciality-1" checked>
+                    <label for="speciality-2">Блок преимуществ</label><input type="checkbox" name="speciality" id="speciality-2">
+                    <label for="speciality-3">Новости</label><input type="checkbox" name="speciality" id="speciality-3" checked>
+                    <label for="speciality-4">Галерея</label><input type="checkbox" name="speciality" id="speciality-4">
+                    <label for="speciality-5">Корзина</label><input type="checkbox" name="speciality" id="speciality-5">
+                </fieldset>
+                <button type="submit">Показать</button>
+            </form>
+        </section>
         <section class="catalog">
             <h2 class="visually-hidden">Каталог товаров</h2>
             <div class="sort">
@@ -49,6 +67,16 @@
                 <div><img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka"></div>
                 <div><img src="img/img-aplus.jpg" width="360" height="576" alt="A+ Plus"></div>
                 <div><img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст"></div>
+            </div>
+            <div class="catalog-navigation">
+                <nav>
+                    <ul>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#" class="next">Следующая</a></li>
+                    </ul>
+                </nav>
             </div>
         </section>
     </main>
